@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ReferenceObjectFactory:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ReferenceObjectFactory_jar</output-path>
+    <root id="archive" name="ReferenceObjectFactory.jar">
+      <element id="module-output" name="Java-sec" />
+    </root>
+  </artifact>
+</component>
