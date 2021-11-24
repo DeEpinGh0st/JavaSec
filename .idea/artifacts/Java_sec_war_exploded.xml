@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Java-sec:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Java_sec_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Java-sec/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Java-sec" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

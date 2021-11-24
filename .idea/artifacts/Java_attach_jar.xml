@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Java-attach:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Java_attach_jar</output-path>
+    <root id="archive" name="Java-attach.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Java-sec" />
+    </root>
+  </artifact>
+</component>

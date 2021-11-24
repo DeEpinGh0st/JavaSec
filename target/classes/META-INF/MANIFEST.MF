@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Agent-Class: cc.saferoad.agent.CrackAttach
+Can-Retransform-Classes: true
+Main-Class: cc.saferoad.agent.CrackAttach
+
+
+
