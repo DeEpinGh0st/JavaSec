@@ -20,6 +20,8 @@ public class MyServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
         out.println("Hello World~");
+        out.println("Server path: " + request.getServletPath());
+        out.println("Remote addr: " + request.getRemoteAddr());
         out.flush();
         out.close();
     }
