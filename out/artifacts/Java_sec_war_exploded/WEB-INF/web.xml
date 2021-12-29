@@ -5,7 +5,7 @@
          version="4.0">
     <servlet>
         <servlet-name>MyServlet</servlet-name>
-        <servlet-class>cc.saferoad.servlet.MyServlet</servlet-class>
+        <servlet-class>cc.saferoad.servlet.filtermemshell.MyServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>MyServlet</servlet-name>
