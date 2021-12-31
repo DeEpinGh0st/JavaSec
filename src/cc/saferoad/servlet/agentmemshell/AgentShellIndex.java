@@ -1,0 +1,21 @@
+/*
+@auther S0cke3t
+@date 2021-12-30
+*/
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.annotation.*;
+import java.io.IOException;
+
+@WebServlet(name = "AgentShellIndex", value = "/AgentShellIndex")
+public class AgentShellIndex extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    }
+}
