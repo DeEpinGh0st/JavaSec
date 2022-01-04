@@ -1,7 +1,4 @@
 Manifest-Version: 1.0
-Agent-Class: cc.saferoad.agent.CrackAttach
+Agent-Class: cc.saferoad.servlet.agentmemshell.agent.ShellAgent
 Can-Retransform-Classes: true
-Main-Class: cc.saferoad.agent.CrackAttach
-
-
 
